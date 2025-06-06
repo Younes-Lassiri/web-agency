@@ -16,15 +16,15 @@ const Contact: React.FC = () => {
         </div>
         <div className="contact-section-slide-form-infos-right">
             <div className="contact-section-slide-form-infos-right-fill">
-                <label>What's your name?</label>
+                <label>What&apos;s your name?</label>
                 <input type='text' name='name'/>
             </div>
             <div className="contact-section-slide-form-infos-right-fill">
-                <label>What's your email?</label>
+                <label>What&apos;s your email?</label>
                 <input type='email' name='email'/>
             </div>
             <div className="contact-section-slide-form-infos-right-fill">
-                <label>What's your budget? (Ex. $3K - $5K)</label>
+                <label>What&apos;s your budget? (Ex. $3K - $5K)</label>
                 <input type='number' name='budget'/>
             </div>
             <div className="contact-section-slide-form-infos-right-fill">

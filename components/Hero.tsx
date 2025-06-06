@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import heroImg from '../public/images/laptop.png';
 
 const Hero: React.FC = () => {
   return (
@@ -33,7 +34,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="request-a-website-button"
           >
-            <span>Request a website <Image src="https://uploads-ssl.webflow.com/6375cfe728bf0d973edef52c/6375df90cde00154c63cae36_Arrow.svg" alt="" /></span>
+            <span>Request a website <Image src="https://uploads-ssl.webflow.com/6375cfe728bf0d973edef52c/6375df90cde00154c63cae36_Arrow.svg" alt="" width={24} height={24}/></span>
           </motion.a>
 
           <motion.p 
@@ -72,7 +73,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="request-a-website-button"
           >
-            <span>Request a website <Image src="https://uploads-ssl.webflow.com/6375cfe728bf0d973edef52c/6375df90cde00154c63cae36_Arrow.svg" alt="" /></span>
+            <span>Request a website <Image src="https://uploads-ssl.webflow.com/6375cfe728bf0d973edef52c/6375df90cde00154c63cae36_Arrow.svg" alt="" width={24} height={24}/></span>
           </motion.a>
 
 
@@ -86,7 +87,8 @@ const Hero: React.FC = () => {
           </motion.p>
         </div>
       </div>
-      <div className='main-content-screen-right-side'></div>
+      <div className='main-content-screen-right-side'>
+      </div>
     </section>
   );
 };

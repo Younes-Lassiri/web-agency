@@ -1,5 +1,8 @@
-
-
+'use client'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import 'animate.css';
+import { use, useEffect } from 'react';
 export default function ServicesSection() {
   const services = [
     {
@@ -82,7 +85,12 @@ export default function ServicesSection() {
 }
 
   ]
-
+  useEffect(() => {
+  AOS.init({
+    once: true,
+  });
+  AOS.refresh();
+}, []);
   return (
     <section className="px-[10px] md:px-8 py-20 bg-[#0b0b13] text-white font-inter" id="service">
       <div className="mb-16 site-section-title">
@@ -94,7 +102,7 @@ export default function ServicesSection() {
         {services.map((service, index) => (
           <div
             key={index}
-            className="p-8 rounded-md bg-gradient-to-br from-[#2d0d0d] via-[#1d112f] to-[#0b0b2e]"
+            className="p-8 rounded-md bg-gradient-to-br from-[#2d0d0d] via-[#1d112f] to-[#0b0b2e] animate__animated" data-aos="fade-up" data-aos-delay={`${index * 200}`} data-aos-duration="800"
           >
             <h3 className="text-2xl font-semibold mb-4">{service.title}</h3>
             <p className="text-white/80 mb-6 text-sm leading-relaxed">

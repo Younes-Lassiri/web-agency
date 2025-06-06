@@ -1,5 +1,6 @@
 'use client'
 import React from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const Hero: React.FC = () => {
@@ -32,7 +33,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="request-a-website-button"
           >
-            <span>Request a website <img src="https://uploads-ssl.webflow.com/6375cfe728bf0d973edef52c/6375df90cde00154c63cae36_Arrow.svg" alt="" /></span>
+            <span>Request a website <Image src="https://uploads-ssl.webflow.com/6375cfe728bf0d973edef52c/6375df90cde00154c63cae36_Arrow.svg" alt="" /></span>
           </motion.a>
 
           <motion.p 
@@ -71,7 +72,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="request-a-website-button"
           >
-            <span>Request a website <img src="https://uploads-ssl.webflow.com/6375cfe728bf0d973edef52c/6375df90cde00154c63cae36_Arrow.svg" alt="" /></span>
+            <span>Request a website <Image src="https://uploads-ssl.webflow.com/6375cfe728bf0d973edef52c/6375df90cde00154c63cae36_Arrow.svg" alt="" /></span>
           </motion.a>
 
 

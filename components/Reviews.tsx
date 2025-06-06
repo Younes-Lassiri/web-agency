@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-
+import Image from 'next/image';
 const Reviews: React.FC = () => {
     const reviews = [
         {
@@ -29,7 +29,7 @@ const Reviews: React.FC = () => {
         {
         reviews.map((review, i) => (
             <div key={i} className="reviews-section-slider-items-review">
-                <img src='https://oakharborwebdesigns.com/assets/images/quote-blue.svg' style={{filter: 'grayscale(1) brightness(1350%)'}}/>
+                <Image src='https://oakharborwebdesigns.com/assets/images/quote-blue.svg' style={{filter: 'grayscale(1) brightness(1350%)'}}/>
                 <p>{review.content}</p>
                 <h3>{review.name}</h3>
                 <h4>{review.position}</h4>

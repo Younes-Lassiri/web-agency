@@ -1,14 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
-import { 
-  Mail, 
-  Instagram, 
-  Linkedin, 
-  MessageCircle,
-  Music2,
-  Twitter
-} from 'lucide-react';
-
 const Footer: React.FC = () => {
   return (
     <footer className="flex items-center justify-between flex-col lg:flex-row footer-section">

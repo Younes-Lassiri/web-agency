@@ -8,7 +8,7 @@ export default function ServicesSection() {
     {
   title: "Mobile First Design",
   description:
-    "We build your site for mobile devices first to ensure a lean, optimized codebase—free from unnecessary bloat. This approach enhances responsiveness and performance across all devices.",
+    "We build your site for mobile devices first to ensure a lean, optimized codebase free from unnecessary bloat. This approach enhances responsiveness and performance across all devices.",
   items: [
     "Mobile-first approach",
     "Clean, optimized code",

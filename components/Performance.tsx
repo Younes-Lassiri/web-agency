@@ -1,7 +1,6 @@
 'use client'
 import React from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 import pagespeed from '../public/images/pagespeed-9def2c561e2cf5e88db0d19be07f0bb8.avif'
 const Performance: React.FC = () => {
   return (

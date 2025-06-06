@@ -2,8 +2,6 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import heroImg from '../public/images/laptop.png';
-
 const Hero: React.FC = () => {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center text-white bg-black w-full main-content-screen">

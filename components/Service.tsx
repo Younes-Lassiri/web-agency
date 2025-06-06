@@ -2,7 +2,7 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'animate.css';
-import { use, useEffect } from 'react';
+import { useEffect } from 'react';
 export default function ServicesSection() {
   const services = [
     {

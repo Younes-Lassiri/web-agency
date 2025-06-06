@@ -1,0 +1,353 @@
+@import "tailwindcss";
+.navbar-link-a
+{
+    font-family: 'Anek Malayalam', sans-serif;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1em;
+    transition: 0.5s;
+}
+.navbar-link-a:hover{
+    color: oklch(79.2% .209 151.711);
+}
+.main-content-screen
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 32px;
+}
+.main-content-screen-left-side h1
+{
+    font-family: 'Anek Malayalam', sans-serif;
+    color: #fff;
+    font-size: 38px;
+    line-height: 1.3em;
+    font-weight: 400;
+    margin-bottom: 25px;
+    text-align: left;
+}
+.main-content-screen-left-side
+{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    padding-bottom: 10%;
+}
+.main-content-screen-left-side p
+{
+    font-family: 'Anek Malayalam', sans-serif;
+    color: #e2e2e2;
+    line-height: 1.6em;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+p.cancel-anytime-p
+{
+    font-family: 'Anek Malayalam', sans-serif;
+    color: #e2e2e2;
+    line-height: 1.6em;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: left;
+}
+.thenav-div-links
+{
+    padding: 0 32px;
+}
+.logo-site-text
+{
+    font-size: 20px;
+}
+.request-a-website-button
+{
+    font-family: 'Anek Malayalam', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 1em;
+    font-weight: 500;
+}
+.request-a-website-button span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    margin-bottom: 25px;
+    background-image: linear-gradient(120deg, #693834, #282c67);
+    gap: 10px;
+  padding: 20px;
+    width: fit-content;
+    transition: 1s;
+    border-radius: 50px;
+    position: relative;
+}
+.request-a-website-button span:hover
+{
+    background-image: linear-gradient(120deg, #282c67, #693834);
+}
+.request-a-website-button img
+{
+    width: 12px;
+    height: 12px;
+}
+.thenav-parent-section
+{
+    background-color: rgba(20, 21, 32, 0.8);
+}
+.links-bg .links-bg-ul
+{
+    background-color: transparent!important;
+}
+.pricing-tables-section
+{
+    position: relative;
+}
+.feature-item-color
+{
+    color: rgba(255, 255, 255, .76);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.feature-item-color svg
+{
+    color: rgba(255, 255, 255, .76);
+}
+.bg-standard
+{
+    background-color: rgb(153, 255, 51);
+}
+.bg-based
+{
+    background-color: rgb(152, 135, 255);
+}
+.active-link {
+  color: oklch(79.2% .209 151.711) !important;
+}
+.links-bg .links-bg-ul a {
+    margin: 0;
+    padding: 0;
+}
+.site-section-title
+{
+    display: flex;
+    align-items: center;
+}
+.site-section-title-h2
+{
+    font-family: 'Anek Malayalam', sans-serif;
+    color: #fff;
+    font-size: 11px;
+    line-height: 1em;
+    letter-spacing: 3px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+.site-section-title-gradient
+{
+    height: 1px;
+    background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, 0.8));
+    flex: auto;
+}
+.footer-section
+{
+    background-color: black;
+    padding: 100px 32px 50px 32px;
+}
+.logo-site-text-footer
+{
+    font-size: 18px;
+}
+.reviews-section-slider
+{
+    padding: 50px 32px;
+    background-color: black;
+}
+.reviews-section-slider-items
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+.reviews-section-slider-items-review
+{
+    background-color: #030f18;
+    padding: clamp(1.5rem, 3.15vw, 2rem) clamp(1rem, 3.15vw, 2.5rem);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.reviews-section-slider-items-review p{
+    color: #fafbfc;
+    margin-bottom: clamp(1.25rem, 3vw, 2.5rem);
+    font-size: clamp(0.875rem, 2vw, 1rem);
+}
+.reviews-section-slider-items-review h3{
+    color: #fafbfc;
+    font-size: clamp(1.25rem, 3vw, 1.5625rem);
+    font-weight: 700;
+}
+.reviews-section-slider-items-review h4{
+    opacity: 0.7;
+    color: #fafbfc;
+    font-size: 14px;
+    font-weight: 600;
+}
+.reviews-section-slider-items-review img
+{
+    width: 44px;
+    height: 33px;
+    margin-bottom: 2rem;
+}
+.contact-section-slider
+{
+    background-color: black;
+    padding: 50px 32px;
+}
+.contact-section-slide-form-infos
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contact-section-slide-form-infos-left
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 20px;
+}
+.contact-section-slide-form-infos-left h1{
+    color: #fff;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 26px;
+}
+.contact-section-slide-form-infos-left p{
+    color: #fff;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 16px;
+    line-height: 2rem;
+}
+.contact-section-slide-form-infos-left p span
+{
+    text-decoration: underline;
+}
+.contact-section-slide-form-infos-right
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+}
+.contact-section-slide-form-infos-right-fill
+{
+    display: flex;
+    margin-bottom: 35px;
+    flex-direction: column;
+    width: 100%;
+}
+.contact-section-slide-form-infos-right-fill label
+{
+    margin-bottom: 10px;
+    font-family: 'Anek Malayalam', sans-serif;
+    color: #c2c2c2;
+    line-height: 1em;
+    font-size: 14px;
+    font-weight: 300;
+}
+.contact-section-slide-form-infos-right-fill input
+{
+    border-style: none none solid;
+    border-width: 1px;
+    border-color: #000 #000 hsla(0, 0%, 100%, 0.6);
+    border-radius: 0px;
+    background-color: transparent;
+    font-family: 'Anek Malayalam', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1em;
+    outline: none;
+    font-weight: 300;
+    padding: 10px 0;
+}
+.contact-section-slide-form-infos-right-fill input:focus
+{
+    border-color: #fff;
+}
+.contact-section-slide-form-infos-right-fill textarea
+{
+    border-style: none none solid;
+    border-width: 1px;
+    border-color: #000 #000 hsla(0, 0%, 100%, 0.6);
+    border-radius: 0px;
+    background-color: transparent;
+    font-family: 'Anek Malayalam', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1em;
+    outline: none;
+    font-weight: 300;
+    padding: 10px 0;
+}
+.contact-section-slide-form-infos-right-fill textarea:focus
+{
+    border-color: #fff;
+}
+@media screen and (max-width: 767px) {
+    .contact-section-slide-form-infos
+    {
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+    }
+    .contact-section-slider
+    {
+        padding: 50px 10px;
+    }
+    .reviews-section-slider-items-review
+    {
+        border-radius: 0;
+    }
+    .reviews-section-slider
+    {
+        padding: 50px 10px;
+    }
+    .reviews-section-slider-items
+    {
+        grid-template-columns: 1fr;
+    }
+  .main-content-screen {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+  .thenav-div-links
+  {
+    padding: 0 10px;
+  }
+  .site-section-title
+  {
+    padding: 0 10px;
+  }
+  .main-content-screen-left-side h1
+  {
+    font-size: 30px;
+  }
+  .main-content-screen-left-side p
+  {
+    font-size: 14px;
+  }
+  .request-a-website-button span
+  {
+    padding: 16px 20px;
+  }
+  p.cancel-anytime-p
+  {
+    font-size: 11px;
+  }
+}

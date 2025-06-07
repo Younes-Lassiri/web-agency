@@ -102,16 +102,21 @@ const Nav: React.FC = () => {
           >
             <div className="flex flex-col items-center  py-4">
               {navLinks.map(({ label, to }) => (
-                <Link
-                  key={to}
-                  to={to}
-                  onClick={() => setIsOpen(false)}
-                  className="w-full py-4 px-2.5 text-white hover:bg-white/10 transition"
-                  smooth
-                  duration={500}
-                >
-                  {label}
-                </Link>
+                <a
+                key={to}
+                href={`#${to}`}
+                className="px-3 py-2 cursor-pointer transition navbar-link-a text-white"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const element = document.getElementById(to);
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                    window.history.pushState(null, '', `#${to}`);
+                  }
+                }}
+              >
+                {label}
+              </a>
               ))}
             </div>
           </motion.div>

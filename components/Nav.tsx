@@ -59,18 +59,22 @@ const Nav: React.FC = () => {
         <div className="hidden md:flex items-center gap-8 links-bg">
           <div className="flex gap-15 text-sm bg-black py-3 links-bg-ul">
             {navLinks.map(({ label, to }) => (
-              <Link
+              <a
                 key={to}
-                to={to}
-                spy={true}
-                smooth={true}
-                duration={500}
-                offset={-64}  // adjust if your navbar height is 64px
-                activeClass="active-link"
+                href={`#${to}`}
                 className="px-3 py-2 cursor-pointer transition navbar-link-a text-white"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const element = document.getElementById(to);
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                    // Optionally update the URL hash without jumping:
+                    window.history.pushState(null, '', `#${to}`);
+                  }
+                }}
               >
                 {label}
-              </Link>
+              </a>
             ))}
           </div>
         </div>

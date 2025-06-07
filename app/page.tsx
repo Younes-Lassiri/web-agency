@@ -9,11 +9,9 @@ import ProjectSlider from "@/components/ProjectSlider";
 import Reviews from "@/components/Reviews";
 import ServicesSection from "@/components/Service";
 import InfiniteProjectScroller from "@/components/Slider";
-
-
 export default function Home() {
   return (
-    <div className="overflow-hidden ">
+    <main className="overflow-hidden ">
       <Nav/>
       <Hero/>
       <ServicesSection />
@@ -25,6 +23,6 @@ export default function Home() {
       <Reviews/>
       <Contact/>
       <Footer/>
-    </div>
+    </main>
   );
 }

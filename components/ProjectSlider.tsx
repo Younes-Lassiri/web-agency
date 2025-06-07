@@ -83,6 +83,7 @@ export default function ProjectSlider() {
                 width={800}
                 height={500}
                 className="object-cover w-full h-full"
+                loading="lazy"
               />
             </motion.div>
           </AnimatePresence>

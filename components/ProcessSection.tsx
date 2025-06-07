@@ -101,6 +101,7 @@ const ProcessSection = () => {
                       alt={step.title}
                       width={180}
                       height={180}
+                      loading="lazy"
                       className="rounded-md bg-gray-900 p-4 ml-auto"
                     />
                   </div>
@@ -140,7 +141,7 @@ const ProcessSection = () => {
                   initial={{ opacity: 0, x: -50 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.6 }}
-                                      viewport={{ once: false, amount: 0.5 }}
+                  viewport={{ once: false, amount: 0.5 }}
                 >
                   <ul className="text-gray-300 space-y-2">
                     {step.desc.map((d, i) => (
@@ -177,6 +178,7 @@ const ProcessSection = () => {
                       src={step.icon}
                       alt={step.title}
                       width={180}
+                      loading="lazy"
                       height={180}
                       className="rounded-md bg-gray-900 p-4"
                     />

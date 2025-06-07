@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@calcom/atoms": "^1.0.102-booker",
@@ -16,6 +17,7 @@
     "framer-motion": "^12.12.1",
     "lucide-react": "^0.511.0",
     "next": "15.3.2",
+    "next-sitemap": "^4.2.3",
     "nodemailer": "^7.0.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

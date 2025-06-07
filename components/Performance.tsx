@@ -14,9 +14,12 @@ const Performance: React.FC = () => {
             <h1><span className='change-color-span'>Performance</span><br></br>We Build <span style={{color: 'oklch(79.2% .209 151.711)'}}>Better</span> Websites That Perform</h1>
             <p>When it comes to website load times, not very many can get the Google PageSpeed scores that we get with each and every site. Test your website load times with Google PageSpeed Insights and see what your current site is scoring right now.</p>
             <div className="performance-section-slider-main-content-left-side-list">
-                <h2><Image src='https://oakharborwebdesigns.com/assets/svgs/stat1.svg' style={{filter: 'grayscale(1) brightness(1350%)'}} width={40} height={40} alt=''/>Better load times means more traffic and more site conversions over time.</h2>
-                <h2><Image src='https://oakharborwebdesigns.com/assets/svgs/stat2.svg' style={{filter: 'grayscale(1) brightness(1350%)'}} width={40} height={40} alt=''/>Faster websites can help improve SEO and your Google ads performance.</h2>
-                <h2><Image src='https://oakharborwebdesigns.com/assets/svgs/stat3.svg' style={{filter: 'grayscale(1) brightness(1350%)'}} width={40} height={40} alt=''/>Our sites load instantly in under 1 second or less, which leads to a better user experience and conversions.</h2>
+                <h2><Image src='https://oakharborwebdesigns.com/assets/svgs/stat1.svg' style={{filter: 'grayscale(1) brightness(1350%)'}} width={40} height={40} alt='' 
+                loading="lazy"/>Better load times means more traffic and more site conversions over time.</h2>
+                <h2><Image src='https://oakharborwebdesigns.com/assets/svgs/stat2.svg' style={{filter: 'grayscale(1) brightness(1350%)'}} width={40} height={40} alt='' 
+                loading="lazy"/>Faster websites can help improve SEO and your Google ads performance.</h2>
+                <h2><Image src='https://oakharborwebdesigns.com/assets/svgs/stat3.svg' style={{filter: 'grayscale(1) brightness(1350%)'}} width={40} height={40} alt='' 
+                loading="lazy"/>Our sites load instantly in under 1 second or less, which leads to a better user experience and conversions.</h2>
             </div>
             <a
             className="request-a-website-button"

@@ -74,8 +74,8 @@ export default function InfiniteProjectScroller() {
                       alt={`${projectName} screenshot`}
                       width={320}
                       height={192}
+                      loading="lazy"
                       className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-700 ease-out"
-                      priority={index < 4}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <div className="absolute top-4 right-4 flex gap-2">

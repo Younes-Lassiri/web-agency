@@ -13,6 +13,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'Small Business Website Experts | Tifawin Devs | $0 Down – Full Website + Backend for $175/Month',
   description: 'We create high-performance websites to grow your business.',
+  icons: {
+    icon: '/images/tifawinlogo.ico',
+  },
   openGraph: {
     title: 'Small Business Website Experts | Tifawin Devs | $0 Down – Full Website + Backend for $175/Month',
     description: 'Professional web design and development services.',

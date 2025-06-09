@@ -9,6 +9,7 @@ import ProjectSlider from "@/components/ProjectSlider";
 import Reviews from "@/components/Reviews";
 import ServicesSection from "@/components/Service";
 import InfiniteProjectScroller from "@/components/Slider";
+
 export default function Home() {
   return (
     <main className="overflow-hidden ">

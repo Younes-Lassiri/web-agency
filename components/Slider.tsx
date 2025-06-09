@@ -2,20 +2,11 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-
-const allProjects = [
-  '/projects/apple.png',
-  '/projects/copy.png',
-  '/projects/nft.png',
-  '/projects/second.png'
-];
+import projects from '../public/projects/projects';
 
 export default function InfiniteProjectScroller() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [scrollWidth, setScrollWidth] = useState(0);
-
-  const projects = [...allProjects, ...allProjects]; 
-
   useEffect(() => {
     const measureScroll = () => {
       if (containerRef.current) {
@@ -58,8 +49,6 @@ export default function InfiniteProjectScroller() {
           }}
         >
           {projects.map((project, index) => {
-            const projectName = project.split('/').pop()?.replace('.png', '') || 'Project';
-
             return (
               <motion.div
                 key={`project-${index}`}
@@ -70,8 +59,8 @@ export default function InfiniteProjectScroller() {
                 <div className="relative bg-zinc-900 rounded-3xl p-4 border border-zinc-800 hover:border-zinc-700 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/10">
                   <div className="relative w-full h-48 mb-6 rounded-2xl overflow-hidden bg-gradient-to-br from-zinc-800 to-zinc-700">
                     <Image
-                      src={project}
-                      alt={`${projectName} screenshot`}
+                      src={project.image}
+                      alt={`${project.name} screenshot`}
                       width={320}
                       height={192}
                       loading="lazy"
@@ -87,23 +76,26 @@ export default function InfiniteProjectScroller() {
 
                   <div className="space-y-4">
                     <h3 className="text-white text-2xl font-bold capitalize mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-400 transition-all duration-300">
-                      {projectName}
+                      {project.name.slice(0, 20)}
                     </h3>
                     <p className="text-zinc-400 text-sm leading-relaxed">
-                      A showcase of modern web development with cutting-edge technologies and beautiful design.
+                      {project.description.length > 130
+                      ? project.description.slice(0, 130) + '...'
+                      : project.description}
                     </p>
 
                     <div className="flex items-center justify-between pt-4 border-t border-zinc-800">
                       <div className="flex items-center gap-3">
                         <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg">
                           <span className="text-white text-xs font-bold">
-                            {projectName.charAt(0).toUpperCase()}
+                            {project.name.charAt(0).toUpperCase()}
                           </span>
                         </div>
                         <span className="text-zinc-300 text-sm font-medium">View Project</span>
                       </div>
 
-                      <motion.div
+                      <a href={project.preview} target='_blank'>
+                        <motion.div
                         className="w-10 h-10 bg-zinc-800 hover:bg-zinc-700 rounded-xl flex items-center justify-center transition-colors cursor-pointer"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.95 }}
@@ -112,6 +104,7 @@ export default function InfiniteProjectScroller() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                         </svg>
                       </motion.div>
+                      </a>
                     </div>
                   </div>
 

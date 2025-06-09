@@ -1,34 +1,79 @@
 export const projects = [
   {
-    title: "Spacify Collection",
-    tags: ["Brand identity", "UI&UX", "Graphic design", "Web development"],
-    description:
-      "Spacify Collection is a modern e-commerce platform showcasing limited-edition space-themed apparel and accessories, designed to provide a seamless shopping experience with a futuristic user interface.",
-    imageUrl: '/projects/copy.png',
-    url: '/projects/copy.png',
+    title: 'The 360 AI News',
+    tags: ["Wordpress","Templates and Plugins","Brand identity", "Web development"],
+    imageUrl: '/images/the360.png',
+    description: 'Stay ahead with The 360 AI News — your trusted source for the latest breakthroughs in artificial intelligence, tech innovations, industry trends, and expert insights. Explore the future, today.',
+    url: 'https://the360ainews.com/'
   },
   {
-    title: "Drive Sales Marketing",
-    tags: ["Brand identity", "UI&UX", "Graphic design", "Web development"],
-    description:
-      "Drive Sales Marketing is a data-driven campaign solution that blends striking visuals and strategic UX design to increase conversion rates and brand visibility for B2B clients.",
-    imageUrl: '/projects/apple.png',
-    url: '/projects/apple.png'
+    title: 'AlaaiHost',
+    tags: ["Wordpress","Templates and Plugins","Brand identity", "Web development"],
+    imageUrl: '/images/alaaihost.png',
+    description: 'Start your own hosting business with AlaaiHost. We provide powerful, secure, and budget-friendly reseller hosting plans with 24/7 support, fast performance, and easy management tools. Perfect for entrepreneurs and web developers.',
+    url: 'https://alaaihost.com/'
   },
   {
-    title: "Drive Sales Marketing",
-    tags: ["Brand identity", "UI&UX", "Graphic design", "Web development"],
-    description:
-      "This initiative focuses on crafting a cohesive digital identity, combining targeted graphic design assets and responsive web development to drive leads and boost ROI across multiple channels.",
-    imageUrl: '/projects/second.png',
-    url: '/projects/second.png',
+    title: 'SocialUp',
+    tags: ["Wordpress","Templates and Plugins","Brand identity", "Web development"],
+    imageUrl: '/images/socialup.png',
+    description: 'Get real likes, views, and followers for TikTok, YouTube, and Instagram with SocialUp. Grow your social presence fast with affordable, secure, and instant delivery services tailored for influencers and content creators.',
+    url: 'https://socialup.kesug.com/'
   },
   {
-    title: "Drive Sales Marketing",
+    title: '24 AI Tech News',
+    tags: ["Wordpress","Templates and Plugins","Brand identity", "Web development"],
+    imageUrl: '/images/24aitech.png',
+    description: 'Stay informed 24/7 with 24 AI Tech News — your go-to source for the latest updates in artificial intelligence, machine learning, robotics, and cutting-edge tech. Discover trends shaping the future of innovation.',
+    url: 'https://24aitechnews.com/'
+  },
+  {
+    title: 'Sehha News',
+    tags: ["Wordpress","Templates and Plugins","Brand identity", "Web development"],
+    imageUrl: '/images/sehha.png',
+    description: 'Explore the latest in health, wellness, and body care with Sehha News. Get trusted daily updates, expert advice, and natural remedies to help you live a healthier, balanced life.',
+    url: 'https://sehhanews.ma/'
+  },
+  {
+    title: 'Apple Streaming',
     tags: ["Brand identity", "UI&UX", "Graphic design", "Web development"],
-    description:
-      "An end-to-end marketing solution that integrates custom UI components and interactive features, ensuring an engaging customer journey from first click to final purchase.",
-    imageUrl: '/projects/nft.png',
-    url: '/projects/nft.png',
+    imageUrl: '/images/apple.png',
+    description: 'A clean interface driven by components, showcasing layouts and interactive elements for smooth UI design and live changes during.',
+    url: 'https://rebuild-react.vercel.app/'
+  },
+  {
+    title: 'NFT Marketing',
+    tags: ["Brand identity", "UI&UX", "Graphic design", "Web development"],
+    imageUrl: '/images/nft.png',
+    description: 'A vibrant experience focused on marketing services and system launches that drive user engagement and effective market strategies.',
+    url: 'https://nfts-app.vercel.app/'
+  },
+  {
+    title: 'Smart Potential',
+    tags: ["Brand identity", "UI&UX", "Graphic design", "Web development"],
+    imageUrl: '/images/second.png',
+    description: 'An AI-powered campaign sample targeting smart marketing potentials, designed to boost content reach and improve user experience.',
+    url: 'https://secend-front-end-project.vercel.app/'
+  },
+  {
+    title: 'Fidalgo',
+    tags: ["Brand identity", "UI&UX", "Graphic design", "Web development"],
+    imageUrl: '/images/fidalgo.png',
+    description: 'Fidalgo Sushi Restaurant brings fresh traditional sushi with a modern touch, offering easy ordering and table reservations online.',
+    url: 'https://sushi-restaurant-eight.vercel.app/'
+  },
+  {
+    title: 'Hyperon',
+    tags: ["Brand identity", "UI&UX", "Graphic design", "Web development"],
+    imageUrl: '/images/hyperon.png',
+    description: 'Hyperon Clothes Store delivers the latest fashion trends through a smooth site, offering easy browsing, size customization, and fast checkout.',
+    url: 'https://hyperon-clothes-store.vercel.app/'
+  },
+  {
+    title: 'Planis',
+    tags: ["Brand identity", "UI&UX", "Graphic design", "Web development"],
+    imageUrl: '/images/planis.png',
+    description: 'Planis Streaming App provides a seamless, user-friendly platform to enjoy music, podcasts, and videos with personalized',
+    url: 'https://movie-streaming-app-bay.vercel.app/'
   }
 ];

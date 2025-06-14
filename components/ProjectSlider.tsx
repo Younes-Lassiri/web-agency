@@ -51,6 +51,7 @@ export default function ProjectSlider() {
 
               <a
                 href={project.url}
+                target='_blank'
                 className="text-sm text-white flex items-center gap-1 transition-colors duration-200 mt-17"
                 style={{
                   textDecoration: 'none',

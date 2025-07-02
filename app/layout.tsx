@@ -1,13 +1,18 @@
-// app/layout.tsx or app/layout.js
-
+// app/layout.tsx
 import type { Metadata } from "next";
-import { Geist_Mono } from "next/font/google";
+import { Geist_Mono, Anek_Malayalam } from "next/font/google";
 import "@calcom/atoms/globals.min.css";
 import "./globals.css";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const anekMalayalam = Anek_Malayalam({
+  variable: "--font-anek-malayalam",
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
 });
 
 export const metadata: Metadata = {
@@ -36,11 +41,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@400;500;700&display=swap"
-          rel="stylesheet"
-        />
+      <body className={`${geistMono.variable} ${anekMalayalam.variable} antialiased`}>
+        {children}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -58,9 +60,6 @@ export default function RootLayout({
             }),
           }}
         />
-      </head>
-      <body className={`${geistMono.variable} antialiased`}>
-        {children}
       </body>
     </html>
   );

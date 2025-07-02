@@ -1,9 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export", // this enables static export
+  // Remove output: "export" to enable API routes
   images: {
-    unoptimized: true, // if you're using <Image>, disables automatic optimization
+    unoptimized: true,
   },
 };
 

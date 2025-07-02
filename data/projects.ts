@@ -1,5 +1,6 @@
 export const projects = [
   {
+    id: 1,
     title: 'The 360 AI News',
     tags: ["Wordpress","Templates and Plugins","Brand identity", "Web development"],
     imageUrl: '/images/the360.png',
@@ -7,6 +8,7 @@ export const projects = [
     url: 'https://the360ainews.com/'
   },
   {
+    id: 2,
     title: 'AlaaiHost',
     tags: ["Wordpress","Templates and Plugins","Brand identity", "Web development"],
     imageUrl: '/images/alaaihost.png',
@@ -14,6 +16,7 @@ export const projects = [
     url: 'https://alaaihost.com/'
   },
   {
+    id: 3,
     title: 'SocialUp',
     tags: ["Wordpress","Templates and Plugins","Brand identity", "Web development"],
     imageUrl: '/images/socialup.png',
@@ -21,6 +24,7 @@ export const projects = [
     url: 'https://socialup.kesug.com/'
   },
   {
+    id: 4,
     title: '24 AI Tech News',
     tags: ["Wordpress","Templates and Plugins","Brand identity", "Web development"],
     imageUrl: '/images/24aitech.png',
@@ -28,6 +32,7 @@ export const projects = [
     url: 'https://24aitechnews.com/'
   },
   {
+    id: 5,
     title: 'Sehha News',
     tags: ["Wordpress","Templates and Plugins","Brand identity", "Web development"],
     imageUrl: '/images/sehha.png',
@@ -35,6 +40,7 @@ export const projects = [
     url: 'https://sehhanews.ma/'
   },
   {
+    id: 6,
     title: 'Apple Streaming',
     tags: ["Brand identity", "UI&UX", "Graphic design", "Web development"],
     imageUrl: '/images/apple.png',
@@ -42,6 +48,7 @@ export const projects = [
     url: 'https://rebuild-react.vercel.app/'
   },
   {
+    id: 7,
     title: 'NFT Marketing',
     tags: ["Brand identity", "UI&UX", "Graphic design", "Web development"],
     imageUrl: '/images/nft.png',
@@ -49,6 +56,7 @@ export const projects = [
     url: 'https://nfts-app.vercel.app/'
   },
   {
+    id: 8,
     title: 'Smart Potential',
     tags: ["Brand identity", "UI&UX", "Graphic design", "Web development"],
     imageUrl: '/images/second.png',
@@ -56,6 +64,7 @@ export const projects = [
     url: 'https://secend-front-end-project.vercel.app/'
   },
   {
+    id: 9,
     title: 'Fidalgo',
     tags: ["Brand identity", "UI&UX", "Graphic design", "Web development"],
     imageUrl: '/images/fidalgo.png',
@@ -63,6 +72,7 @@ export const projects = [
     url: 'https://sushi-restaurant-eight.vercel.app/'
   },
   {
+    id: 10,
     title: 'Hyperon',
     tags: ["Brand identity", "UI&UX", "Graphic design", "Web development"],
     imageUrl: '/images/hyperon.png',
@@ -70,6 +80,7 @@ export const projects = [
     url: 'https://hyperon-clothes-store.vercel.app/'
   },
   {
+    id: 11,
     title: 'Planis',
     tags: ["Brand identity", "UI&UX", "Graphic design", "Web development"],
     imageUrl: '/images/planis.png',
